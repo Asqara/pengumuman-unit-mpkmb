@@ -19,7 +19,7 @@
         <div class="content-box">
             <div class="data-title" id="nama"></div>
             <div class="data-subtitle" id="nim"></div>
-            <div class="data-info" id="pilihan">Pilihan : </div>
+            <div class="data-info" id="pilihan">Unit PJK : </div>
         </div>
     </div>
     <div class="footer">
@@ -37,17 +37,17 @@
             // Menampilkan data
             document.getElementById("nama").textContent = data.nama ;
             document.getElementById("nim").textContent = data.nim ;
-            document.getElementById("pilihan").textContent = data.pilihan;
+            document.getElementById("pilihan").textContent = "Unit PJK : "+ data.pilihan;
             
 
             // Menentukan status kelulusan
             if (data.status === "Lolos") {
-                document.getElementById("selamat").textContent = "Selamat, Anda dinyatakan LULUS!";
+                document.getElementById("selamat").textContent = "Selamat, Anda sudah masuk Unit!";
                 nav.classList.add("nav-lulus");
-                judulPengumuman.textContent = "SELAMAT ANDA DINYATAKAN LULUS SELEKSI WAWANCARA ORMAWA EKSEKUTIF PKU";
+                judulPengumuman.textContent = "CONGRATS HEART KEEPERS!";
                 // subPengumuman.textContent = "Selamat bergabung dengan kami";
                 //if(data.pilihan==="Biro Riset Pengembangan"){
-                    document.getElementById("selamat").textContent = "Selamat! Kamu telah terpilih menjadi staff Ormawa Eksekutif PKU 2024/2025. Semoga selalu amanah dalam menjalankan tanggung jawab, terus berkontribusi secara maksimal, dan membawa banyak manfaat bagi organisasi serta KM PKU. Perjalanan berlayar bersama Samudra Wirakarsa akan segera dimulai!";
+                    document.getElementById("selamat").textContent = "Selamat! Kamu telah resmi menjadi bagian dari Unit PJK Heart Keepers. Seperti mawar yang merekah dalam kehangatan, kamu hadir untuk menjaga hati, meromantisasi, dan menjadi kamu yang berarti. Mari bersama menciptakan ruang yang penuh rasa, berjalan tulus dalam membersamai maba, dan menebar cinta di setiap langkah.Perjalanan bersama Heart Keepers baru saja dimulai, siap mekar dan bermakna!";
                 //}
             } else {
                 document.getElementById("selamat").textContent = "Maaf, Anda tidak lulus. Coba lagi tahun depan!";
